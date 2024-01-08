@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página HTML</title>
 </head>
-<header>ESTO ES EL HEADER</header>
+<header>ESTE ES EL HEADER</header>
 <body>
     <h1>ESTA ES UNA PÁGINA HECHA CON HTML</h1>
     <img src="imagenes/imagen html.jpg" > <br>
-    
-    <p>ESCRIBE AQUÍ:</p>
-    <textarea name="CUADRO DE TEXTAREA" id="" cols="30" rows="10"></textarea>
-    <button>HAZ CLICK AQUÍ</button>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mNbnV3aN3KA?si=SR7Kw_m9Zv7AJqGd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <table border="1">
         <tr>
@@ -49,11 +46,50 @@
     <p>Enlace:</p>
     <a href="https://github.com/Laraaa7/LaraDAW">REPOSITORIO GITHUB DE LARA</a> <br>
 
-   <b>ESTA FRASE APARECERÁ EN NEGRITA</b>
-<video src="https://www.youtube.com/watch?v=MJkdaVFHrto"></video>
+   <b>ESTA FRASE APARECERÁ EN NEGRITA AL USAR EL ELEMENTO &lt;b&gt;</b>
+  
+   <p>Abreviatura ONU con &lt;abbr&gt;:</p>
+    <abbr title="ONU">ONU</abbr><br>
 
+    <p>Frase subrayada:</p>
+    <u>Esta frase aparece subrayada</u>
 
+    <p>Citar obras, libros, etc:</p>
+    <cite>"El Rey León"</cite>
+
+   <h2>FORMULARIO</h2>
+   <form action="formulario.php" method = "post">
+    <b><label for="nombre">Nombre completo:</label></b>
+    <input type="text" id="nombre" name="nombre" pattern="[A-za-z+ÁÉÍÓÚáéíóúñÑ]" required><br>
+
+   <b><label for="DNI">DNI:</label></b>
+    <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Z]" required><br>
+
+    <b><label for="email">Correo electrónico:</label></b>
+    <input type="email" id="email" name="email" required><br>
     
+   <b><label for="fecha">Fecha de nacimiento:</label></b>
+    <input type="date" id="fecha" name="fecha" required><br>
+
+    <b><label for="edad">¿Es mayor de edad?</label></b>
+    <input type="radio" id="edadSi" name="edad" value="si" required>
+    <label for="edadSi">Sí</label>
+    <input type="radio" id="edadNo" name="edad" value="no" required>
+    <label for="edadNo">No</label><br>
+    
+   <b><label for="privacidad">Política de privacidad:</label></b><br>
+    <textarea name="privacidad" id="priacidad" cols="30" rows="5">
+No se utilizarán ni se compartirán sus datos con terceros.
+    </textarea><br>
+    
+    <b><label for="aceptar">Acepto la política de privacidad:</label></b><br>
+    <input type="checkbox" id="aceptar" name="aceptar" required> <br>
+   
+    <input type="submit" value="Enviar">
+   <input type="reset" value="Reiniciar">
+
+</form>
+
 </body>
-<footer>ESTO ES EL FOOTER</footer>
+<footer>ESTE ES EL FOOTER</footer>
 </html>
